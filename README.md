@@ -74,3 +74,32 @@ wearable-injury-risk-dissertation/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+
+## Data Files and Notebook Usage
+
+Four datasets are supplied in the `data/` directory.
+
+| Data file | Used by |
+| --- | --- |
+| `Report Sample 31 (Injured).csv` | `01_Single_Sample_EDA.ipynb` |
+| `Report Sample 8 (Healthy).csv` | Optional alternative sample for `01_Single_Sample_EDA.ipynb` |
+| `Combined Data VF.ods` | `02_Anomaly_Detection.ipynb` |
+| `Trend Data Combined.ods` | `03_Logistic_Regression.ipynb`, `04_Decision_Tree.ipynb`, `05_AdaBoost.ipynb`, `06_Random_Forest.ipynb`, `07_XGBoost.ipynb` |
+
+### Running the notebooks
+
+The notebooks should be run in numerical order where practical.
+
+`01_Single_Sample_EDA.ipynb` performs exploratory analysis on a single
+30-day Garmin sample. It is configured to use the injured example,
+`Report Sample 31 (Injured).csv`. To examine the supplied healthy example
+instead, change the file path in the notebook to
+`Report Sample 8 (Healthy).csv`.
+
+`02_Anomaly_Detection.ipynb` uses the full daily time-series dataset
+contained in `Combined Data VF.ods`.
+
+Notebooks 03–07 use the processed sample-level dataset
+`Trend Data Combined.ods` for supervised classification.
+
+All required datasets are stored in the `data/` directory.

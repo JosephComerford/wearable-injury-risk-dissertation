@@ -1,14 +1,28 @@
 # -----------------------------
-# Dissertation data - DO NOT COMMIT
+# Dissertation data
 # -----------------------------
+
+# Ignore everything in data by default
 data/*
+
+# Allow documentation and approved dissertation datasets
 !data/README.md
+!data/Report Sample 31 (Injured).csv
+!data/Report Sample 8 (Healthy).csv
+!data/Combined Data VF.ods
+!data/Trend Data Combined.ods
 
 # Raw / processed datasets
 *.csv
 *.ods
 *.xls
 *.xlsx
+
+# Re-allow the four approved dissertation datasets
+!data/Report Sample 31 (Injured).csv
+!data/Report Sample 8 (Healthy).csv
+!data/Combined Data VF.ods
+!data/Trend Data Combined.ods
 
 # Garmin authentication and generated reports
 .garminconnect/
@@ -40,3 +54,4 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
