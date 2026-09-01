@@ -1,0 +1,42 @@
+# -----------------------------
+# Dissertation data - DO NOT COMMIT
+# -----------------------------
+data/*
+!data/README.md
+
+# Raw / processed datasets
+*.csv
+*.ods
+*.xls
+*.xlsx
+
+# Garmin authentication and generated reports
+.garminconnect/
+**/.garminconnect/
+garmin_report_*.csv
+
+# Secrets / environment variables
+.env
+.env.*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
