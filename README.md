@@ -58,7 +58,7 @@ wearable-injury-risk-dissertation/
 │
 ├── notebooks/
 │   ├── 01_Single_Sample_EDA.ipynb
-│   ├── 02_Anomoly_Detection.ipynb
+│   ├── 02_Anomaly_Detection.ipynb
 │   ├── 03_Logistic_Regression.ipynb
 │   ├── 04_Decision_Tree.ipynb
 │   ├── 05_AdaBoost.ipynb
